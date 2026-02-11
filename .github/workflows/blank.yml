@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: echo "Hello, ${{vars.MY_NAME}}"
+        run: echo "Hello, ${{secrets.CLOUD_PASSWORD}}"
 
 
 
