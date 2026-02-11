@@ -1,11 +1,13 @@
-name: Hello world
+name: Git hub action workflow
 on: push
 jobs:
-  build: 
+  action-demo: 
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
-        run: echo "Hello, ${{secrets.CLOUD_PASSWORD}}"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: print
+        run: cat index.html
 
 
 
